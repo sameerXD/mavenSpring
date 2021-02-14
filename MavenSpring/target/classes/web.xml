@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-lazy-init="true" xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	    
+    
+       <bean class = "com.ncu.samsahil.MavenSpring.Sourcing" name = "sourcing">
+       <property name="fullName" value="samsahil"/>
+       <property name = "age" value = "10"/>
+       <property name="address" value = "Delhi faridabad"></property>
+       <property name = "phoneNum" value = "1234342"></property>
+       <property name = "email" value ="sahilsam@gmail.com"></property>
+       <property name = "loanType" value = "Education"></property>
+       </bean>
+       
+       <bean class = "com.ncu.samsahil.MavenSpring.NewLoan" name = "newLoan" autowire = "byName"></bean>
+       
+       <bean class = "com.ncu.samsahil.MavenSpring.DataEntry" name = "de">
+       <property name="income" value="10000"/>
+       <property name="assets" value="1000"/>
+       <property name="liability" value="100"/>
+       <property name="education" value="graduate"/>
+       <property name="adhar" value="1212nnnn212"/>
+       <property name="pan" value="2121kkkn2112"/>
+       </bean>
+    
+   
+</beans>
